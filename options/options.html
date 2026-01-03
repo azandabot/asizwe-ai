@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AsizweAI Settings</title>
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header class="header">
+      <div class="logo">
+        <div class="logo-icon">
+          <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="16" cy="16" r="14" stroke="url(#gradient)" stroke-width="2"/>
+            <path d="M12 20L16 12L20 20" stroke="url(#gradient)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M13 18H19" stroke="url(#gradient)" stroke-width="2" stroke-linecap="round"/>
+            <defs>
+              <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#4361ee"/>
+                <stop offset="100%" stop-color="#4cc9f0"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <div class="logo-text">
+          <h1>AsizweAI Settings</h1>
+          <span class="tagline">Configure your translation experience</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- API Configuration Section -->
+    <section class="section">
+      <h2 class="section-title">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+          <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+        </svg>
+        API Configuration
+      </h2>
+      <p class="section-description">Enter your API keys to enable translation services. At minimum, you need an OpenAI API key.</p>
+
+      <div class="form-group">
+        <label for="openaiApiKey">
+          OpenAI API Key
+          <span class="required">*Required</span>
+        </label>
+        <div class="input-wrapper">
+          <input type="password" id="openaiApiKey" placeholder="sk-..." autocomplete="off">
+          <button type="button" class="toggle-visibility" data-target="openaiApiKey">
+            <svg class="eye-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+              <circle cx="12" cy="12" r="3"/>
+            </svg>
+            <svg class="eye-closed" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"/>
+              <line x1="1" y1="1" x2="23" y2="23"/>
+            </svg>
+          </button>
+        </div>
+        <span class="helper-text">Used for Whisper STT and GPT translation. Get your key at <a href="https://platform.openai.com/api-keys" target="_blank">platform.openai.com</a></span>
+      </div>
+
+      <div class="form-group">
+        <label for="deepgramApiKey">
+          Deepgram API Key
+          <span class="optional">Optional</span>
+        </label>
+        <div class="input-wrapper">
+          <input type="password" id="deepgramApiKey" placeholder="Enter Deepgram API key..." autocomplete="off">
+          <button type="button" class="toggle-visibility" data-target="deepgramApiKey">
+            <svg class="eye-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+              <circle cx="12" cy="12" r="3"/>
+            </svg>
+            <svg class="eye-closed" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"/>
+              <line x1="1" y1="1" x2="23" y2="23"/>
+            </svg>
+          </button>
+        </div>
+        <span class="helper-text">Alternative STT with real-time streaming. Get your key at <a href="https://console.deepgram.com/" target="_blank">console.deepgram.com</a></span>
+      </div>
+
+      <div class="form-group">
+        <label for="elevenLabsApiKey">
+          ElevenLabs API Key
+          <span class="optional">Optional</span>
+        </label>
+        <div class="input-wrapper">
+          <input type="password" id="elevenLabsApiKey" placeholder="Enter ElevenLabs API key..." autocomplete="off">
+          <button type="button" class="toggle-visibility" data-target="elevenLabsApiKey">
+            <svg class="eye-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+              <circle cx="12" cy="12" r="3"/>
+            </svg>
+            <svg class="eye-closed" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"/>
+              <line x1="1" y1="1" x2="23" y2="23"/>
+            </svg>
+          </button>
+        </div>
+        <span class="helper-text">Premium voice synthesis for natural TTS. Get your key at <a href="https://elevenlabs.io/" target="_blank">elevenlabs.io</a></span>
+      </div>
+    </section>
+
+    <!-- Provider Preferences Section -->
+    <section class="section">
+      <h2 class="section-title">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="3"/>
+          <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+        </svg>
+        Service Preferences
+      </h2>
+      <p class="section-description">Choose which providers to use for each service.</p>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="sttProvider">Speech-to-Text Provider</label>
+          <select id="sttProvider">
+            <option value="elevenlabs">ElevenLabs (Best for Zulu)</option>
+            <option value="openai">OpenAI Whisper</option>
+            <option value="deepgram">Deepgram Nova-2</option>
+            <option value="webspeech">Web Speech API (Free)</option>
+          </select>
+          <span class="helper-text">ElevenLabs recommended for African languages</span>
+        </div>
+
+        <div class="form-group">
+          <label for="translationProvider">Translation Provider</label>
+          <select id="translationProvider">
+            <option value="openai">OpenAI GPT-4o-mini</option>
+            <option value="libre">LibreTranslate (Free)</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="ttsProvider">Text-to-Speech Provider</label>
+          <select id="ttsProvider">
+            <option value="native">Browser Native (Free)</option>
+            <option value="elevenlabs">ElevenLabs (Premium)</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="ttsVoiceId">ElevenLabs Voice</label>
+          <select id="ttsVoicePreset">
+            <option value="">-- Select a preset voice --</option>
+            <option value="pNInz6obpgDQGcFmaJgB">Adam (Deep, warm male)</option>
+            <option value="ErXwobaYiN019PkySvjV">Antoni (Calm male)</option>
+            <option value="21m00Tcm4TlvDq8ikWAM">Rachel (Clear female)</option>
+            <option value="AZnzlk1XvdvUeBnXmlld">Domi (Strong female)</option>
+            <option value="EXAVITQu4vr4xnSDxMaL">Bella (Soft female)</option>
+            <option value="MF3mGyEYCl7XYWbV9V6O">Elli (Young female)</option>
+            <option value="TxGEqnHWrfWFTfGW9XjX">Josh (Deep male)</option>
+            <option value="VR6AewLTigWG4xSOukaG">Arnold (Strong male)</option>
+            <option value="custom">Custom Voice ID...</option>
+          </select>
+          <input type="text" id="ttsVoiceId" placeholder="Or paste custom voice ID..." style="margin-top: 8px;">
+          <span class="helper-text">Browse <a href="https://elevenlabs.io/voice-library" target="_blank">ElevenLabs Voice Library</a> for African accents. Search "African" or "South African"</span>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="ttsSpeed">Speaking Speed</label>
+        <div class="speed-control">
+          <input type="range" id="ttsSpeed" min="0.5" max="2" step="0.1" value="1">
+          <span id="ttsSpeedValue" class="speed-value">1.0x</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Actions -->
+    <div class="actions">
+      <button id="testConnection" class="btn btn-secondary">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+          <polyline points="22 4 12 14.01 9 11.01"/>
+        </svg>
+        Test Connection
+      </button>
+      <button id="saveSettings" class="btn btn-primary">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/>
+          <polyline points="17 21 17 13 7 13 7 21"/>
+          <polyline points="7 3 7 8 15 8"/>
+        </svg>
+        Save Settings
+      </button>
+    </div>
+
+    <!-- Status Messages -->
+    <div id="statusMessage" class="status-message hidden"></div>
+  </div>
+
+  <script src="options.js" type="module"></script>
+</body>
+</html>
