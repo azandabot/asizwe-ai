@@ -285,7 +285,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 </p>
 
 <p align="center">
-  <a href="https://github.com/yourusername/asizwe-ai/issues">Report Bug</a>
+  <a href="https://github.com/azandabot/asizwe-ai/issues">Report Bug</a>
   ·
-  <a href="https://github.com/yourusername/asizwe-ai/issues">Request Feature</a>
+  <a href="https://github.com/azandabot/asizwe-ai/issues">Request Feature</a>
 </p>
