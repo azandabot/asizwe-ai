@@ -15,13 +15,13 @@
 
 **AsizweAI** (meaning "Let Us Hear" in Zulu) is a Chrome extension that provides real-time translation of spoken vernacular, slang, and regional dialects into your preferred language. Whether you're watching a video, attending a virtual meeting, or consuming content in an unfamiliar dialect, AsizweAI captures the audio and delivers instant, context-aware translations.
 
-Built with a focus on **African languages** (Zulu, Xhosa, Afrikaans) while supporting 15+ global languages, AsizweAI bridges communication gaps that traditional translators miss—preserving cultural nuance, tone, and idiomatic expressions.
+Built with a focus on **African languages** (Zulu, Xhosa, Afrikaans) while supporting 15+ global languages, AsizweAI bridges communication gaps that traditional translators miss preserving cultural nuance, tone, and idiomatic expressions.
 
 ### Why AsizweAI?
 
 - **Vernacular First**: Unlike generic translators, we're optimized for colloquial speech, slang, and regional expressions
 - **Real-Time Processing**: Hear translations as conversations happen, not after
-- **Privacy Focused**: Audio is processed through secure APIs—nothing is stored on our servers
+- **Privacy Focused**: Audio is processed through secure APIs nothing is stored on our servers
 - **Cultural Preservation**: Translations maintain the emotional intent and cultural context of the original speech
 
 <br />
